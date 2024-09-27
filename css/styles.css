@@ -364,7 +364,6 @@ main {
     letter-spacing: 0.02em;
 }
 .footer-container {
-    position: relative;
     display: flex;
     align-items: baseline;
 }
@@ -411,10 +410,6 @@ main {
     margin-right: 24px;
 }
 .ftr-btn-subscribe {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
     display: flex;
     justify-content: center;
     align-items: center;

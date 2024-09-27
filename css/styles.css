@@ -364,6 +364,7 @@ main {
     letter-spacing: 0.02em;
 }
 .footer-container {
+    position: relative;
     display: flex;
     align-items: baseline;
 }
@@ -379,6 +380,62 @@ main {
 .link-icon-ftr:focus {
     background-color: #31D0AA;
 }
+.social-links-footer-container {
+    margin-right: 80px;
+}
+.ftr-input {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: none;
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: 0.04em;
+    color: #fff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ftr-input::placeholder {
+    color: #fff;
+}
+.ftr-input:hover, .ftr-input:focus {
+    border-color: #4D5AE5;
+}
+.container-subscribe {
+    margin-right: 24px;
+}
+.ftr-btn-subscribe {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    background-color: #4d5ae5;
+    border: none;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ftr-btn-subscribe:focus, .ftr-btn-subscribe:hover{
+background-color: #404BBF;
+}
+.ftr-btn-icon{
+    display: flex;
+    justify-content: center;
+    margin-left: 16px;
+
+}
 /* Modal style */
 .modal-overlay {
     background-color: rgba(0, 0, 0, 0.5);
@@ -393,12 +450,12 @@ main {
     pointer-events: none;
     transition: opacity 250ms ;
 }
-.modal-overlay.is-open {
+/* .modal-overlay.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 .modal {
     position: absolute;
     top: 50%;
@@ -430,15 +487,20 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 24px;
-    
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-icon {
     fill: #2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-btn:focus, .modal-btn:hover {
- background-color: #404bbf;
- fill: #ffffff;
+.modal-close-btn:focus, .modal-close-btn:hover {
+    background-color: #404bbf;
+}
+.modal-close-btn:focus,
+.modal-close-btn:hover > .modal-close-icon {
+    fill: #fff;
 }
 .modal-txt {
         font-weight: 500;
